@@ -1,3 +1,16 @@
-[default]
-model = "THUDM/GLM-4-9B-0414"
+platform = "ollama"
+model = "deepseek-r1:8b"
 api_key = "your api key"
+
+# ollama 参考
+# [default]
+# platform = "ollama"
+# model = "deepseek-r1:8b"
+# api_key = "your api key"
+
+# siliconflow 参考：
+# [default]
+# platform = "siliconflow"
+# model = "THUDM/GLM-4-9B-0414"
+# api_key = "your api key"
+
