@@ -1,16 +1,6 @@
 platform = "ollama"
-model = "phi4:14b"
+model = "deepseek-r1:8b"
 api_key = "your api key"
-
-# ollama 参考:
-# platform = "ollama"
-# model = "mistral:7b"
-# api_key = "your api key"
-
-# ollama 参考:
-# platform = "ollama"
-# model = "deepseek-r1:8b"
-# api_key = "your api key"
 
 # ollama 参考:
 # platform = "ollama"
@@ -19,6 +9,6 @@ api_key = "your api key"
 
 # siliconflow 参考：
 # platform = "siliconflow"
-# model = "THUDM/GLM-4-9B-0414"
+# model = "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
 # api_key = "your api key"
 

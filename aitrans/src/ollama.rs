@@ -84,7 +84,7 @@ pub fn call(text: &str, model:String, _api_key: String, _from: String, _to: Stri
             },
             Message {
                 role: "user".to_string(),
-                content: format!("请将下列内容从 {} 语言翻译成 {} 语言:\n{}", _from, _to, text),
+                content: format!("请将下列内容从 {} 语言翻译成 {} 语言.\n 要翻译的内容为：'{}'", _from, _to, text),
             },
         ],
         stream: false,
