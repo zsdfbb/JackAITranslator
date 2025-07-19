@@ -1,6 +1,5 @@
-use reqwest::blocking::{Client, Response};
+use reqwest::blocking::Client;
 use serde::{Deserialize, Serialize};
-use std::env;
 
 #[derive(Debug, Serialize)]
 struct Message {
@@ -33,7 +32,7 @@ struct MessageResponse {
     content: String,
 }
 
-pub fn call(text: &str, model:String, api_key: String) -> Result<(), Box<dyn std::error::Error>> 
+pub fn call(text: &str, model:String, api_key: String, _from: String, _to: String) -> Result<(), Box<dyn std::error::Error>> 
 {
     let endpoint = "https://api.siliconflow.cn/v1/chat/completions";
     // 构建请求
@@ -48,7 +47,7 @@ pub fn call(text: &str, model:String, api_key: String) -> Result<(), Box<dyn std
             },
             Message {
                 role: "user".to_string(),
-                content: format!("请将以下文本翻译成英文:\n{}", text),
+                content: format!("请将下列内容从 {} 语言翻译成 {} 语言:\n{}", _from, _to, text),
             },
         ],
         stream: false,
