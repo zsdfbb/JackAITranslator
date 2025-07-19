@@ -14,6 +14,7 @@ cd ..
 
 ## Usage
 
+```text
 AITrans - A command-line tool for translating text between languages.
 
 USAGE:
@@ -23,3 +24,4 @@ USAGE:
   aitrans -l, --list        // list all supported languages
   aitrans -v, --version     // Prints version information
   aitrans --debug [INPUT]   // Prints debug information
+```
