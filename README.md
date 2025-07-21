@@ -4,6 +4,8 @@ AI-based command-line translation tool
 
 ## Install
 
+1. compile and install:
+
 ```bash
 cd aitrans
 cargo build --release
@@ -11,6 +13,13 @@ cargo build --release
 cd ..
 ./install.sh
 ```
+
+2. install binary
+
+```bash
+./install.sh --bin
+```
+
 
 ## Usage
 
