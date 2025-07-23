@@ -34,3 +34,5 @@ USAGE:
   aitrans -v, --version     // Prints version information
   aitrans --debug [INPUT]   // Prints debug information
 ```
+## Example
+<img width="1197" height="97" alt="image" src="https://github.com/user-attachments/assets/7ec9b22a-3eeb-44d3-9669-e90a4185380e" />
