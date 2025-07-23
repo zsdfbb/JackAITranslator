@@ -1,4 +1,4 @@
-# JackTranslate
+# JackAITranslate
 
 AI-based command-line translation tool
 
