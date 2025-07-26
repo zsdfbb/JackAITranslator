@@ -3,17 +3,11 @@ use serde::{Deserialize, Serialize};
 use log::{error, debug};
 
 
-#[derive(Debug, Serialize)]
-struct Message {
-    role: String,
-    content: String,
-}
-
 // API请求数据结构
 #[derive(Debug, Serialize)]
 struct ChatRequest {
     model: String,
-    messages: Vec<Message>,
+    messages: Vec<ChatMessage>,
     stream: bool,
 }
 
@@ -78,11 +72,11 @@ pub fn call(text: &str, model:String, _api_key: String, _from: String, _to: Stri
     let request = ChatRequest {
         model: model,
         messages: vec![
-            Message {
+            ChatMessage {
                 role: "system".to_string(),
                 content: "你是一个专业翻译，能准确进行中英互译。仅提供翻译结果，禁止返回其他内容".to_string(),
             },
-            Message {
+            ChatMessage {
                 role: "user".to_string(),
                 content: format!("请将下列内容从 {} 语言翻译成 {} 语言.\n 要翻译的内容为：'{}'", _from, _to, text),
             },
