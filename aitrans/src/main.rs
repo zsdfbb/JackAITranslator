@@ -62,7 +62,7 @@ fn parse_args() -> Result<AppArgs, pico_args::Error> {
     }
 
     if pargs.contains(["-f", "--from"]) {
-        let value: Option<String> = pargs.opt_value_from_str("--to").unwrap();
+        let value: Option<String> = pargs.opt_value_from_str("--from").unwrap();
         if let Some(value) = value {
             if !LANGUAGES.contains(&value.as_str()) {
                 error!("Invalid language: {}", value);
